@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+
+		<title>Weather App</title>
+		<!-- CSS only -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+			crossorigin="anonymous" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+			rel="stylesheet" />
+		<link rel="stylesheet" href="src/styles.css" />
+	</head>
+	<body>
+		<div class="weather-app">
+			<h6>Weather Forecast</h6>
+			<h1>Lisbon</h1>
+			<div class="container text-center">
+				<div class="row justify-content-md-center">
+					<div class="col col-lg-2 day-time" , id="date">
+						Today <br />
+						12:00
+					</div>
+					<div class="col-md-auto temperature">
+						<span id="current-temperature">20°C</span>
+					</div>
+					<div class="col col-lg-2 description", id="description" >Very Sunny
+				</div>
+			</div>
+			<div class="container">
+				<div class="row row-cols-1 row-cols-md-5 g-2 justify-content-md-center">
+					<div class="col">
+						<div class="card h-100">
+							<div class="card-body">
+								<h5 class="card-title">Tomorrow</h5>
+								<p class="card-text">
+									MAX <br />
+									29°C <br />
+									MIN <br />
+									22°C
+									<br />
+								</p>
+								<p class="emoji">☀️</p>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card h-100">
+							<div class="card-body">
+								<h5 class="card-title">Friday</h5>
+								<p class="card-text">
+									MAX <br />
+									25°C <br />
+									MIN <br />
+									20°C
+									<br />
+								</p>
+								<p class="emoji">🌤</p>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card h-100">
+							<div class="card-body">
+								<h5 class="card-title">Saturday</h5>
+								<p class="card-text">
+									MAX <br />
+									28°C <br />
+									MIN <br />
+									22°C
+									<br />
+								</p>
+								<p class="emoji">⛈</p>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card h-100">
+							<div class="card-body">
+								<h5 class="card-title">Sunday</h5>
+								<p class="card-text">
+									MAX <br />
+									30°C <br />
+									MIN <br />
+									26°C
+									<br />
+								</p>
+								<p class="emoji">🌩</p>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card h-100">
+							<div class="card-body">
+								<h5 class="card-title">Monday</h5>
+								<p class="card-text">
+									MAX <br />
+									29°C <br />
+									MIN <br />
+									25°C
+									<br />
+								</p>
+								<p class="emoji">🌨</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<form class="insert-city" id="type-city">
+					<div class="row justify-content-md-center">
+						<div class="col-7">
+							<input
+								class="form-control form-control-lg city"
+								type="text"
+								placeholder="type your city here"
+								id="search-city" />
+						</div>
+						<div class="col-1">
+							<input
+								type="submit"
+								value="✔️"
+								class="form-control form-control-lg submit" />
+						</div>
+					</div>
+					<button>Current temperature</button>
+				</form>
+				<p>Coded by Ana de Morais</p>
+			</div>
+		</div>
+		<script src="js/script.js"></script>
+	</body>
+</html>

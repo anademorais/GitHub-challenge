@@ -1,0 +1,93 @@
+body {
+	text-align: center;
+	font-family: "Poppins", sans-serif;
+
+	width: auto;
+}
+h6 {
+	font-size: xx-small;
+	padding-top: 50px;
+	font-weight: bold;
+}
+
+form {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+p {
+	font-size: x-small;
+	font-weight: bold;
+}
+
+button {
+	background-color: green;
+	color: #fff;
+	padding: 10px;
+	border: 1px;
+	border-radius: 100px;
+	margin-top: 20px;
+}
+
+.weather-app {
+	border: 1px solid #c6eaf9;
+	margin: 20px;
+	border-radius: 700px;
+	background-color: #f5f9fd;
+	max-width: 900px;
+	margin: auto;
+}
+
+.container {
+	display: inline-block;
+}
+
+.temperature {
+	font-size: 24px;
+}
+
+.card {
+	margin-top: 20px;
+	border-radius: 70px;
+	background-color: #c8ddf0;
+	border: 0;
+	width: auto;
+}
+.card-body {
+	padding-top: 32px;
+	padding-bottom: 0;
+	transition: all 150ms ease-in-out;
+}
+.card-body:hover {
+	cursor: pointer;
+	background-color: white;
+	border-radius: 70px;
+}
+.card-title {
+	font-size: 18px;
+	color: #43a6f5;
+}
+.card-text {
+	font-size: 12px;
+	margin-bottom: 0;
+}
+
+.col {
+	width: 158px;
+}
+.emoji {
+	font-size: 30px;
+}
+.insert-city {
+	margin: 0;
+}
+.city {
+	border-style: none;
+	border-radius: 5px;
+}
+
+.submit {
+	background-color: #6da4da;
+	border-style: none;
+	border-radius: 5px;
+}
